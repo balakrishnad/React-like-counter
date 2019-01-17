@@ -1,3 +1,5 @@
+![alt text](https://github.com/balakrishnad/React-sample-proj/blob/master/sample-react-proj.PNG)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
