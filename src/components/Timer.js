@@ -20,13 +20,16 @@ class Timer extends Component {
             started: !prevState.started,
             paused: prevState.started
         }), () => {
+            // clearing the interval when the user clicks pause.
             if (this.state.paused) {
                 clearInterval(this.interval);
             }
 
+            // Starting the interval..
             if (this.state.started) {
                 this.interval = setInterval(() => {
-                    if (this.state.time <= 10000) {
+                    // Check for 2 mins.. Max duration is 2 mins.
+                    if (this.state.time <= 120000) {
                         this.setState(prevState => ({ time: prevState.time + 10 }));
                     } else {
                         clearInterval(this.interval);
@@ -40,7 +43,8 @@ class Timer extends Component {
         clearInterval(this.interval);
         this.setState({
             time: 0,
-            started: false
+            started: false,
+            paused: false
         });
     }
 
@@ -56,7 +60,7 @@ class Timer extends Component {
                     <div className="counter-display align-items-center bg-light text-secondary">
                         <br />
                         <div className="mx-auto display-5">
-                            <i className="fas fa-stopwatch fa-2x" />
+                            <i className="fas fa-stopwatch fa-4x" />
                         </div>
                         <br />
                         <div className="mx-auto display-4">{this.timeObj.formatedTime(time)}</div>
