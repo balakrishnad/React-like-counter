@@ -1,4 +1,5 @@
 export default class timeClass {
+    // Formatting the time depending on the milliseconds..
     formatedTime(timeInMilliseconds) {
 
         let time = timeInMilliseconds;
