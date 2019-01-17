@@ -1,0 +1,15 @@
+.counter-panel {
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.counter-display {
+    margin: 0 auto;
+    height: 200px;
+}
+
+.button-panel {
+    height: 100px;
+}
