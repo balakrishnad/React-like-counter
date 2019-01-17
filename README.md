@@ -1,2 +1,2 @@
-# likeCounter
-Sample app...
+# React-like-counter
+
